@@ -23,9 +23,9 @@ USE_DENSENET = False
 CKPT_PATH = 'model.pth.tar'
 N_CLASSES = 1
 CLASS_NAMES = [ 'Tuberculosis']
-DATA_DIR = './XRAY_images/images'
-TRAIN_IMAGE_LIST = './XRAY_images/labels/train_list.txt'
-TEST_IMAGE_LIST = './XRAY_images/labels/test_list.txt'
+DATA_DIR = 'chexnet_tb/XRAY_images/images'
+TRAIN_IMAGE_LIST = 'chexnet_tb/XRAY_images/labels/train_list.txt'
+TEST_IMAGE_LIST = 'chexnet_tb/XRAY_images/labels/test_list.txt'
 
 # Higher vals for execution on machine with GPU acceleration
 BATCH_SIZE = 64
