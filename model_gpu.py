@@ -23,7 +23,7 @@ USE_DENSENET = False
 CKPT_PATH = 'model.pth.tar'
 N_CLASSES = 1
 CLASS_NAMES = [ 'Tuberculosis']
-DATA_DIR = 'chexnet_tb/XRAY_images/images'
+DATA_DIR = 'drive/chexnet_tb/unzipped/MontgomerySet/CXR_png'
 TRAIN_IMAGE_LIST = 'chexnet_tb/XRAY_images/labels/train_list.txt'
 TEST_IMAGE_LIST = 'chexnet_tb/XRAY_images/labels/test_list.txt'
 
