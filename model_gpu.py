@@ -23,7 +23,7 @@ USE_DENSENET = False
 CKPT_PATH = 'model.pth.tar'
 N_CLASSES = 1
 CLASS_NAMES = [ 'Tuberculosis']
-DATA_DIR = 'drive/chexnet_tb/unzipped/MontgomerySet/CXR_png'
+DATA_DIR = 'drive/chexnet_tb/unzipped/MontgomerySet/CXR_png/'
 TRAIN_IMAGE_LIST = 'chexnet_tb/XRAY_images/labels/train_list.txt'
 TEST_IMAGE_LIST = 'chexnet_tb/XRAY_images/labels/test_list.txt'
 
@@ -121,6 +121,7 @@ def train_run(model, train_loader, optimizer, criterion, epoch):
 
     running_loss = 0.0
     iterations = 0
+    print(enumerate(train_loader))
     for i, (inp, target) in enumerate(train_loader):
         target = target.cuda()
         bs, c, h, w = inp.size()
