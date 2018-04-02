@@ -121,10 +121,12 @@ def train_run(model, train_loader, optimizer, criterion, epoch):
 
     running_loss = 0.0
     iterations = 0
-    print(enumerate(train_loader))
+    print("This is " + enumerate(train_loader))
     for i, (inp, target) in enumerate(train_loader):
         target = target.cuda()
         bs, c, h, w = inp.size()
+        print("2nd one bruh " + target)
+        print("Yeah Bro!!!" + bs, c, h, w)
         input_var = Variable(inp.view(-1, c, h, w).cuda(), volatile=False)
         target_var = Variable(target)
 
