@@ -121,7 +121,7 @@ def train_run(model, train_loader, optimizer, criterion, epoch):
 
     running_loss = 0.0
     iterations = 0
-    print("This is " + enumerate(train_loader))
+    print("This is " + str(enumerate(train_loader)))
     for i, (inp, target) in enumerate(train_loader):
         target = target.cuda()
         bs, c, h, w = inp.size()
