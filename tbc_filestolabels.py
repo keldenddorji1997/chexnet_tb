@@ -8,7 +8,7 @@ import os
 from random import randint
 
 SOURCE_DIR = "drive/chexnet_tb/unzipped/MontgomerySet/CXR_png"
-TARGET_DIR = "./XRAY_images/labels/"
+TARGET_DIR = "chexnet_tb/XRAY_images/labels"
 
 train_file = open(TARGET_DIR + 'train_list.txt', "w")
 test_file = open(TARGET_DIR + 'test_list.txt', "w")
