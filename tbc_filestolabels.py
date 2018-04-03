@@ -7,7 +7,7 @@ Anything ending in _1.png is a positive example, negative otherwise.
 import os
 from random import randint
 
-SOURCE_DIR = "drive/chexnet_tb/unzipped/MontgomerySet/CXR_png"
+SOURCE_DIR = "drive/chexnet_tb/unzipped/ChinaSet_AllFiles/CXR_png"
 TARGET_DIR = "chexnet_tb/XRAY_images/labels"
 
 train_file = open(TARGET_DIR + 'train_list.txt', "w")
